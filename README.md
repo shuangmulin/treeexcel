@@ -48,7 +48,7 @@ JDK 1.8 +
 public class Test{
 
     public static void main(String[] args) throws IOException {
-        // 注意这里的`#`这个符号，使用来分割表头层级的，只需要按这个格式写，执行后相同的父级会自动合并（看下面的效果图）
+        // 注意这里的`#`这个符号，是用来分割表头层级的，只需要按这个格式写，执行后相同的父级会自动合并（看下面的效果图）
         Table table = Table.builder()
                 .tableName("销售汇总报表")
                 .addHeader("styleNo", "商品数据#商品档案")
@@ -128,4 +128,5 @@ public class Test{
 ```
 3. 效果
 以上代码执行，就会得到一张这样的Excel
-   
+
+<img alt="treeexcel" src="https://raw.githubusercontent.com/shuangmulin/treeexcel/master/img/img.png">
